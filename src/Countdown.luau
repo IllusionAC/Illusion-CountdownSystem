@@ -4,12 +4,12 @@
 local RunService = game:GetService("RunService")
 local Players = game:GetService("Players")
 
-local CountdownEvent: RemoteEvent = script.Parent:FindFirstChild("CountdownEvent") :: RemoteEvent
+local CountdownEvent: RemoteEvent = script:FindFirstChild("CountdownEvent") :: RemoteEvent
 
 if not CountdownEvent then
 	CountdownEvent = Instance.new("RemoteEvent")
 	CountdownEvent.Name = "CountdownEvent"
-	CountdownEvent.Parent = script.Parent
+	CountdownEvent.Parent = script
 end
 
 local Countdown = {}
