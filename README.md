@@ -25,3 +25,5 @@ local Countdown = require("../Countdown")
 -- When server starts couldown, client is ready
 Countdown.ClientInit()
 ```
+
+PS: The RemoteEvent is instanciated inside Countdown.luau
